@@ -79,3 +79,16 @@ HAVING (COUNT(*) > 1 AND F1.X = F1.Y) OR (F1.X <> F1.Y)
 ORDER BY
     F1.X;
 
+
+
+WITH CTE AS (
+  SELECT X, Y, ROW_NUMBER() OVER (ORDER BY X, Y) AS rn
+  FROM Functions
+)
+SELECT DISTINCT f1.X, f1.Y
+FROM CTE f1
+JOIN CTE f2
+  ON f1.X = f2.Y AND f1.Y = f2.X
+WHERE f1.rn <> f2.rn    
+  AND f1.X <= f1.Y      
+ORDER BY f1.X, f1.Y;
