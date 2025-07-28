@@ -1,0 +1,14 @@
+-- View: public.Sales_vw
+
+-- DROP VIEW public."Sales_vw";
+
+CREATE OR REPLACE VIEW public."Sales_vw"
+ AS
+ SELECT productid,
+    sum(salesamount) AS total_amount
+   FROM sales
+  GROUP BY productid;
+
+ALTER TABLE public."Sales_vw"
+    OWNER TO postgres;
+
