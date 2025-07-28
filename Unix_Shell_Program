@@ -1,0 +1,32 @@
+Unix and Shell Programming.
+
+1.	Introduction to UNIX Operating System and Basic UNIX commands
+• Introduction to UNIX Operating System
+• Operating System architecture & components
+• Basic UNIX Commands
+• How to create a Shell script with simple hello world Program – Save & Run
+2.	UNIX File System
+• UNIX File System
+• File Types
+• File Permissions
+• I-node entries
+• File Related Commands
+Pipe Concept – Std input, output and Error
+3.	Unix Environment
+• Shells (bash, Korn, C shell) 
+• System Variables
+• Set options
+• The Process
+• Running commands in background
+• Cron scheduler
+4.	Filters
+• • Simple Filters (grep, head, tail & tr)
+• • Advanced Filters (sort & find)
+• Tools & Regular Expressions (sed & awk)
+• Search – File & Nested search
+5.	Basic OS commands to check Processes, memory, CPU & Thread, Storage/space
+Vi Editor
+• Vi Editor
+• Input Mode Commands
+• Vi Editor – Save & Quit
+• Cursor Movement Commands
