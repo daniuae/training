@@ -1,0 +1,15 @@
+-- View: public.customer_sales_summary
+
+-- DROP MATERIALIZED VIEW IF EXISTS public.customer_sales_summary;
+
+CREATE MATERIALIZED VIEW IF NOT EXISTS public.customer_sales_summary
+TABLESPACE pg_default
+AS
+ SELECT productid,
+    sum(salesamount) AS total_amount
+   FROM sales
+  GROUP BY productid
+WITH DATA;
+
+ALTER TABLE IF EXISTS public.customer_sales_summary
+    OWNER TO postgres;
