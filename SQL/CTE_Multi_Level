@@ -1,0 +1,55 @@
+CREATE TABLE IF NOT EXISTS Sales (
+    SaleID SERIAL PRIMARY KEY,
+    ProductID INTEGER NOT NULL,
+    SalesAmount NUMERIC(10, 2) NOT NULL,
+    SaleDate DATE
+);
+
+
+
+-- Insert sample sales data
+INSERT INTO Sales (ProductID, SalesAmount, SaleDate) VALUES
+(101, 5000.00, '2025-07-01'),
+(101, 2500.00, '2025-07-02'),
+(101, 3000.00, '2025-07-05'),
+(102, 1500.00, '2025-07-01'),
+(102, 1800.00, '2025-07-03'),
+(102, 1700.00, '2025-07-06'),
+(103, 8000.00, '2025-07-02'),
+(103, 7000.00, '2025-07-03'),
+(104, 1000.00, '2025-07-04'),
+(104, 1100.00, '2025-07-05'),
+(104, 1200.00, '2025-07-06'),
+(105, 4000.00, '2025-07-02'),
+(105, 4500.00, '2025-07-03'),
+(105, 5000.00, '2025-07-06'),
+(105, 5500.00, '2025-07-07'),
+(101, 2000.00, '2025-07-07'),
+(102, 1600.00, '2025-07-07'),
+(103, 6000.00, '2025-07-07'),
+(104, 1300.00, '2025-07-07'),
+(105, 6000.00, '2025-07-08');
+
+
+WITH ProductSales AS (
+-- Step 1: Calculate total sales for each product
+SELECT ProductID, SUM(SalesAmount) AS TotalSales
+FROM Sales
+GROUP BY ProductID
+),
+AverageSales AS (
+-- Step 2: Calculate the average total sales across all products
+SELECT AVG(TotalSales) AS AverageTotalSales
+FROM ProductSales
+),
+HighSalesProducts AS (
+-- Step 3: Filter products with above-average total sales
+SELECT ProductID, TotalSales
+FROM ProductSales
+WHERE TotalSales > (SELECT AverageTotalSales FROM
+AverageSales)
+)
+-- Step 4: Rank the high-sales products
+SELECT ProductID, TotalSales, RANK() OVER (ORDER BY
+TotalSales DESC) AS SalesRank
+FROM HighSalesProducts;
