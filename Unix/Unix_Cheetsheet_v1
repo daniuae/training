@@ -1,0 +1,40 @@
+Unix Commands
+
+              Category  Command                                        Description                                 Example
+0      File Management       ls                            List directory contents                          ls /Users/demo
+1      File Management       cd                                   Change directory                          cd /Users/demo
+2      File Management      pwd                            Print current directory                                     pwd
+3      File Management       cp                             Copy files/directories              cp source.txt /Users/demo/
+4      File Management       mv                   Move or rename files/directories              mv source.txt /Users/demo/
+5      File Management       rm                           Remove files/directories               rm /Users/demo/source.txt
+6      File Management    touch                               Create an empty file                       touch newfile.txt
+7      File Management    mkdir                                 Create a directory                mkdir /Users/demo/newdir
+8      File Management    rmdir                             Remove empty directory                 rmdir /Users/demo/oldir
+9         File Viewing      cat                                 View file contents                cat /Users/demo/file.txt
+10        File Viewing     less                     View file one screen at a time               less /Users/demo/file.txt
+11        File Viewing     head                     View the first lines of a file         head -n 10 /Users/demo/file.txt
+12        File Viewing     tail                      View the last lines of a file         tail -n 10 /Users/demo/file.txt
+13     Text Processing     grep                       Search for patterns in files     grep 'pattern' /Users/demo/file.txt
+14     Text Processing      awk           Pattern scanning and processing language   awk '{print $1}' /Users/demo/file.txt
+15     Text Processing      sed  Stream editor for filtering and transforming text  sed 's/old/new/g' /Users/demo/file.txt
+16          Permission    chmod                            Change file permissions         chmod 755 /Users/demo/script.sh
+17          Permission    chown                              Change file ownership   chown user:group /Users/demo/file.txt
+18           Searching     find                         Find files and directories          find /Users/demo -name '*.txt'
+19           Searching   locate                                 Find files by name                         locate file.txt
+20             Process       ps                              View active processes                                  ps aux
+21             Process      top                Real-time view of running processes                                     top
+22             Process     kill                                Terminate processes                               kill 1234
+23          Networking     ping                         Check network connectivity                         ping google.com
+24          Networking     curl                  Transfer data from or to a server                curl https://example.com
+25          Networking     wget                        Download files from the web       wget https://example.com/file.zip
+26             Archive      tar                                      Archive files       tar -cvf archive.tar /Users/demo/
+27             Archive      zip                                     Compress files    zip archive.zip /Users/demo/file.txt
+28             Archive    unzip                           Extract compressed files       unzip archive.zip -d /Users/demo/
+29           User Info   whoami                                    Current user ID                                  whoami
+30           User Info       id                               User ID and group ID                                      id
+31          Disk Usage       df                                   Disk space usage                                   df -h
+32          Disk Usage       du                          Estimate file space usage                     du -sh /Users/demo/
+33               Shell     echo                             Print text to terminal                    echo 'Hello, World!'
+34               Shell  history                               Show command history                                 history
+35               Shell    alias                           Create command shortcuts                       alias ll='ls -la'
+36  Package Management     brew                          Package manager for macOS                       brew install wget
