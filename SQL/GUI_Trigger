@@ -1,0 +1,5 @@
+BEGIN
+    INSERT INTO employee_audit(emp_id, name, department, salary, action_type)
+    VALUES (NEW.emp_id, NEW.name, NEW.department, NEW.salary, 'INSERT');
+    RETURN NEW;
+END;
