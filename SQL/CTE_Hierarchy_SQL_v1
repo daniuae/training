@@ -1,0 +1,31 @@
+-- Table: public.organization
+
+-- DROP TABLE IF EXISTS public.organization;
+
+CREATE TABLE IF NOT EXISTS public.organization
+(
+    employeeid integer NOT NULL,
+    firstname character varying(50) COLLATE pg_catalog."default",
+    lastname character varying(50) COLLATE pg_catalog."default",
+    department character varying(50) COLLATE pg_catalog."default",
+    managerid integer,
+    CONSTRAINT organization_pkey PRIMARY KEY (employeeid)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.organization
+    OWNER to postgres;
+
+-- Insert 10 Indian names into public.organization
+INSERT INTO public.organization (employeeid, firstname, lastname, department, managerid) VALUES
+(1, 'Ravi', 'Sharma', 'Management', NULL),          -- CEO, top-level
+(2, 'Priya', 'Verma', 'Engineering', 1),
+(3, 'Amit', 'Patel', 'Engineering', 2),
+(4, 'Neha', 'Reddy', 'HR', 1),
+(5, 'Suresh', 'Kumar', 'HR', 4),
+(6, 'Anjali', 'Mehta', 'Finance', 1),
+(7, 'Raj', 'Singh', 'Finance', 6),
+(8, 'Kiran', 'Nair', 'Marketing', 1),
+(9, 'Sneha', 'Das', 'Marketing', 8),
+(10, 'Vikas', 'Joshi', 'Engineering', 2);
