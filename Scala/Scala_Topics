@@ -1,0 +1,35 @@
+Scala
+• An overview of functional programming
+• Why Scala?
+• REPL
+• Working with functions
+• objects and inheritance
+• Working with lists and collections
+<Scala Programming topics to be added>
+Core Big Data and Scala Topics Covered
+Scala vs Java – Similarities & Difference
+✓ Functional Programming vs traditional programming(Scala vs Python)
+✓ Scala Language Fundamentals
+✓ Configuring for Scala with IntelliJ IDEA
+✓ Scala Design Patterns
+✓ Scala 2 Classes and Objects
+✓ Scala Collections
+✓ Scala Asynchronous Programming
+✓ Setting up Environment
+✓ Setup Hadoop on Single Node Cluster
+✓ Setup Hive and Spark on Single Node Cluster
+✓ Scala Fundamentals
+✓ Overview of Hadoop HDFS Commands
+✓ Apache Spark 2 using Scala - Data Processing – Overview
+✓ Apache Spark 2 using Scala - Processing Column Data using Pre-
+defined Functions
+✓ Apache Spark 2 using Scala - Basic Transformations using Data Frames
+✓ Apache Spark 2 using Scala - joining Data Sets
+✓ Apache Spark 2 using SQL - Getting Started
+✓ Apache Spark 2 using SQL - Basic Transformations
+✓ Apache Spark 2 using SQL - Basic DDL and DML
+✓ Apache Spark 2 using SQL - DML and Partitioning
+✓ Apache Spark 2 using SQL - Pre -Defined Functions
+✓ Apache Spark 2 using SQL - Pre -Defined Functions - Exercises
+✓ Apache Spark 2 using SQL - Windowing Functions
+✓ Sample scenarios with solutions
