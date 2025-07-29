@@ -1,0 +1,51 @@
+Business Intelligence
+• Business Intelligence
+• Need for Business Intelligence
+• Terms used in BI
+• Components of BI
+General concept of Data Warehouse
+• Data Warehouse
+• History of Data Warehousing
+• Need for Data Warehouse
+• Data Warehouse Architecture
+• Data Mining Works with DWH
+• Features of Data warehouse
+• Data Mart
+• Application Areas
+Dimensional modeling
+• Dimension modeling
+• Fact and Dimension tables
+• Database schema
+• Schema Design for Modelling
+• Star
+• Snow Flake
+• Fact Constellation schema
+ETL and Metadata
+• ETL process
+• Metadata used in ETL
+• Metadata in Data Warehousing
+• Simple Data warehouse model
+Online Analytical Processing (OLAP)
+• Online Analytical Processing (OLAP)
+• Nature of OLAP analysis
+• Types of OLAP
+• OLAP Tools
+• OLTP and OLAP
+• OLAP Functional requirements
+• OLAP Fast and Selective
+• Operational versus Informational System
+Data Mining
+• Data mining
+• The Knowledge Discovery process
+• Need of Data Mining
+• Use of Data mining
+• Data mining and Business Intelligence
+• Types of data used in Data mining
+• Data mining applications
+• Data mining products
+• Data mining market
+Best Practices for Building Data Warehouse
+• Recipe for a Successful data warehouse
+• Data warehouse pitfalls
+• Popular BI DW tools and suits
+• Trends in BIDW
