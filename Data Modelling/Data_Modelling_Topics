@@ -1,0 +1,32 @@
+Introduction to Data Modeling
+• Importance of data modeling
+• Features of a good data model
+• Who should be involved in data modeling
+• Database design stages and deliverables
+• Classification of information
+Understanding Business Requirements
+• Need of Requirement Analysis
+• Characteristics of a Good Requirement
+• The Data Life cycle
+• Methods of Collecting requirement
+• Business Requirement Specification (BRS)
+Conceptual Model
+• Define conceptual model
+• Objectives of conceptual model
+• Components of Conceptual Model
+• Types of Modeling
+• Entity-Relationship (ER) model
+• Types of Attributes
+• Join Problems
+• Steps of dimension modeling
+• Star Schema
+• Snowflake Schema
+• Bill Inmon Vs Ralph Kimball Approach
+Logical Model
+• Define logical model
+• List features of a logical model
+• Transformations required to be done while converting a conceptual model into a
+• Logical model
+• Activities in table specification
+• Activities in column specification
+• Activities in Primary key specification
